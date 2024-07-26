@@ -1,0 +1,126 @@
+/* CSS 파일: Navbar.module.css */
+@font-face {
+  font-family: fontA;
+  src: local("Y 너만을 비춤체"),
+  url(../styles/Y너만을비춤체.ttf);
+}
+
+.nav {
+  font-family: fontA, sans-serif;
+  display: flex;
+  height: 70px;
+  background: rgba(255, 255, 255, 0.55)
+}
+
+.nav a {
+  max-width: fit-content;
+  display: flex;
+  font-size: 20px;
+  color: #000;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  align-items: center;
+}
+
+.nav .brand {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: auto;
+}
+
+.nav .rightMenu {
+  display: flex;
+  align-items: center;
+}
+
+.nav .navLinks {
+  display: flex;
+}
+
+.nav .userSection {
+  display: flex;
+  align-items: center;
+}
+
+.nav .userInfo {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.nav .userInfo span {
+  margin-right: 5px;
+  color: #000;
+}
+
+.nav .triangle {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid black;
+  margin-left: 5px;
+}
+
+.nav .dropdown {
+  display: none;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #000;
+  right: 0px;
+  top: 48.6px;
+  flex-direction: column;
+  min-width: 140px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  white-space: nowrap; /* 추가 */
+}
+
+.nav .dropdown a{
+  width: 100%;
+  padding: 0px 30px;
+}
+
+.logoutbtn button{
+  text-align: -webkit-center;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0);
+  color: #000;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.nav .dropdown button{
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0);
+  color: #000;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.nav .dropdown a:hover,
+.logoutbtn button:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: all ease 0.3s 0s;
+  color: #333;
+}
+
+.nav .dropdown.show {
+  display: flex;
+}
+
+.nav .rightMenu a:hover {
+  background: none;
+  color: inherit;
+  font-size: 20px;
+  transition: none;
+}

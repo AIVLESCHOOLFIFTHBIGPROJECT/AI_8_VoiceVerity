@@ -1,0 +1,307 @@
+@font-face {
+  font-family: fontA;
+  src: local("Y 너만을 비춤체"), url(Y너만을비춤체.ttf);
+}
+
+.container {
+  font-family: fontA;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #f0f0f0;
+}
+
+.main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.signupBox {
+  background: white;
+  padding: 40px 60px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 485px;
+  width: 100%;
+}
+
+.signupBox p, .checkboxContainer span,
+.signupBox a {
+  font-size: 20px;
+}
+
+.signupBox h1 {
+  font-weight: normal;
+}
+
+.signupBox label {
+  display: flex;
+  align-items: center;
+}
+
+.agreebox {
+  display: flex;
+  align-items: center;
+  align-items: stretch;
+  margin: 10px 0;
+}
+
+.allcheck {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logoContainer {
+  margin-top: -45px;
+  margin-bottom: 30px;
+}
+
+.progress {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.progressBar {
+  width: 50px;
+  height: 20px;
+  background: #ccc;
+  margin-left: 10px;
+  border-radius: 30px;
+}
+
+.progressFilled {
+  width: 50%;
+  height: 100%;
+  background: #666;
+  border-radius: 30px;
+}
+
+.progressFilled2 {
+  width: 100%;
+  height: 100%;
+  background: #666;
+  border-radius: 30px;
+}
+
+.checkboxContainer {
+  text-align: left;
+  margin: 0 50px;
+}
+
+.checkboxContainer p {
+  font-size: 1em;
+  color: #555;
+}
+
+.checkboxContainer input[type="checkbox"] {
+  appearance: none;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  position: relative;
+  margin-right: 10px;
+}
+
+.checkboxContainer input[type="checkbox"]:checked {
+  background-color: #007bff;
+  border: none;
+}
+
+.checkboxContainer input[type="checkbox"]:checked::after {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.termsList {
+  margin-top: 20px;
+}
+
+.termsList label {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.termsList a {
+  text-decoration: none;
+  color: #000;
+}
+
+.termsList a:hover {
+  text-decoration: underline;
+}
+
+.signupButton {
+  font-family: fontA;
+  font-size: 20px;
+  width: 100%;
+  padding: 10px;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.signupButton:hover {
+  background-color: #444;
+}
+
+.backButton {
+  font-family: fontA;
+  font-size: 20px;
+  width: 100%;
+  padding: 10px;
+  background-color: #ccc;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.backButton:hover {
+  background-color: #999;
+}
+
+.subtitle {
+  margin: 10px 0;
+  margin-top: -20px;
+  margin-bottom: 30px;
+}
+
+.signupBox form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputField {
+  font-family: fontA;
+  width: 80%;
+  height: 50px;
+  padding: 0 16px;
+  margin: 5px 0px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+/* New styles for marketing checkboxes */
+.marketing {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.marketing p {
+  color: #868686;
+  text-align: left;
+}
+
+.checkboxGroup {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.checkboxGroup input[type="checkbox"] {
+  appearance: none;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 4px; /* Square */
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  position: relative;
+  margin-right: 10px;
+}
+
+.checkboxGroup input[type="checkbox"]:checked {
+  background-color: #007bff; /* Blue background */
+}
+
+.checkboxGroup input[type="checkbox"]:checked::after {
+  content: '✔'; /* Check mark */
+  display: block;
+  font-size: 14px;
+  color: white; /* White check mark */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.checkboxLabel {
+  font-family: fontA;
+}
+
+.buttonGroup {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.button {
+  font-family: fontA;
+  width: 90%;
+  padding: 10px;
+  background-color: #d9d9d9;
+  color: #000;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  margin: 20px 0;
+}
+
+.button:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.deleteButton {
+  font-family: fontA;
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.deleteButton:hover {
+  background-color: rgb(37, 37, 37);
+}
+
+.deleteText {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+  font-size: 0.9rem;
+  color: rgb(211, 211, 211);
+  cursor: pointer;
+}

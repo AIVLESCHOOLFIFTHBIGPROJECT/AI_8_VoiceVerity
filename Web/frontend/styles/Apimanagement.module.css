@@ -1,0 +1,564 @@
+@font-face {
+  font-family: fontA;
+  src: local("Y 너만을 비춤체"), url(Y너만을비춤체.ttf);
+}
+
+.container {
+  font-family: fontA;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.dashboard {
+  display: flex;
+  flex: 1;
+}
+
+.dashboard h3 {
+  font-size: 28px;
+  font-weight: normal;
+  margin: 15px 0;
+}
+
+.sidebar {
+  min-width: 200px;
+  width: 250px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: solid 1px;
+  margin: 20px 0;
+}
+
+.sidebaroff {
+  content-visibility: hidden;
+  transition: all 0.3s;
+} /*사이드바 닫기*/
+
+.open {
+  border: solid 1px;
+  text-align: center;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 20px;
+  left: 215px;
+  cursor: pointer;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+} /*사이드바 열기*/
+
+.hide {
+  border: solid 1px;
+  text-align: center;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 20px;
+  left: -1px;
+  cursor: pointer;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transform: rotate(180deg);
+} /*사이드바 요소들 숨기기*/
+
+.logo {
+  text-align: center;
+  cursor: pointer;
+}
+
+.logo img {
+  width: 50%;
+}
+
+.logo h2 {
+  margin: 0;
+  margin-top: 5px;
+  font-size: 28px;
+  font-weight: normal;
+}
+
+.menu {
+  font-size: 20px;
+  font-weight: normal;
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0 0 0;
+}
+
+.menu li {
+  height: 80px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin: 10px 0;
+  margin-left: -20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.activeli {
+  outline: solid 1px;
+}
+
+.active {
+  text-align: end;
+  left: 200px;
+  height: 50px;
+  position: absolute;
+  width: 5px;
+  border-radius: 10px;
+  background-color: #9c9c9c;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  flex-grow: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.headerTitle {
+  display: flex;
+  flex-direction: column;
+}
+
+.headerTitle h1 {
+  font-weight: normal;
+  font-size: 36px;
+  margin: 0;
+  margin-top: 30px;
+}
+
+.headerTitle span {
+  margin: 10px 0;
+  font-size: 24px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.profileImage {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.dropdownIcon {
+  margin-left: 10px;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.dropdownMenu ul {
+  list-style-type: none;
+  padding: 10px;
+  margin: 0;
+}
+
+.dropdownMenu li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdownMenu li:hover {
+  background-color: #f4f4f4;
+}
+
+.user > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.user > div span {
+  font-size: 14px;
+}
+
+.userName {
+  font-weight: bold;
+}
+
+.userEmail {
+  font-size: 12px;
+  color: gray;
+}
+
+.content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  border: solid 1px;
+  min-width: 500px;
+  padding: 20px;
+}
+
+.card {
+  flex-grow: 1;
+  font-size: 1.3em;
+}
+
+.card p {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.totalcredit {
+  margin-top: 40px;
+  display: flow-root;
+  width: 100%;
+  max-width: 300px;
+  min-width: 180px;
+}
+
+.cardcontent {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  font-size: 20px;
+}
+
+.usageleft {
+  align-items: left;
+}
+
+.doughnutWrapper {
+  width: 80px;
+  margin-right: 20px;
+}
+
+.chartLegend {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.legendColorBox {
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+}
+
+.purchaseButton {
+  background-color: #fff;
+  font-family: fontA;
+  padding: 5px 10px;
+  font-size: 14px;
+  color: #333;
+  border: solid 2px #333;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-left: auto;
+  float: inline-end;
+}
+
+.purchaseButton:hover {
+  background-color: #f0f0f0;
+  border: solid 2px #333;
+  transition: all 0.2s ease;
+}
+
+.separator {
+  border-left: 2px dashed #ccc;
+  margin: 0 20px;
+  height: auto;
+}
+
+.card h3 {
+  margin-bottom: 20px;
+}
+
+.apiStatus {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.credit {
+  font-size: 24px;
+  margin-top: 30px;
+}
+
+.credit li {
+  margin-bottom: 5px;
+}
+
+.doughnutWrapper {
+  width: 200px;
+  text-align: -webkit-center;
+}
+
+.purchaseButton:hover {
+  background-color: #f0f0f0;
+  border: solid 2px #333;
+  transition: all 0.2s ease;
+}
+
+.status {
+  background-color: green;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+}
+
+.trafficSummary {
+  display: flex;
+  justify-content: space-between;
+  min-width: 800px;
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+  border: solid 1px;
+}
+
+.intervalTabs button {
+  font-family: fontA;
+  font-size: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  border-right: solid 2px #ccc;
+  margin-bottom: 5px;
+}
+
+.intervalTabs button:hover {
+  color: #717171;
+}
+
+.traffic {
+  margin: 10px 20px 0 40px;
+  width: 70%;
+}
+
+.summary {
+  margin: 10px 40px 0 20px;
+  width: 30%;
+}
+
+.graph {
+  background-color: #f0f0f0;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.apiCard {
+  border: 1px solid #000000;
+  border-radius: 10px;
+  padding: 20px;
+  height: 800px;
+}
+
+.apiCard h2 {
+  margin-top: 0;
+}
+
+.keydlete {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.keySection {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  width: 86%; /* 너비 제한을 100%로 설정 */
+  justify-content: space-between;
+}
+
+.keyContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.keyValue {
+  font-family: fontA;
+  font-size: 18px;
+  border: none;
+  border-bottom: solid 1px #717171;
+  margin-right: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: auto; 
+  transition: width 0.2s; 
+}
+
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: nowrap;
+}
+
+.button {
+  font-family: fontA;
+  font-size: 20px;
+  padding: 8px 12px;
+  background: none;
+  border: solid 1px;
+  border-radius: 15px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.statusSection {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  width: 500px;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+.statusSection input[type="radio"] {
+  background-color: #fff;
+  border: 2px solid #ccc;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  margin-right: 10px;
+  appearance: none;
+  border-radius: 50%;
+}
+
+.statusSection input[type="radio"]:checked {
+  background-color: #717171;
+}
+
+.use {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.deleteButton {
+  font-family: fontA;
+  font-size: 20px;
+  padding: 8px 12px;
+  background: none;
+  border: solid 1px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.footer {
+  background: rgba(221, 221, 221, 0.5);
+  color: #000;
+  min-height: 5vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.end {
+  font-size: 20px;
+}
+
+.right {
+  font-size: 20px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  background: none;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+}
+
+.tabs button:hover {
+  background-color: #f0f0f0;
+}
+
+.activeTab {
+  border-bottom: 2px solid #333;
+  font-weight: bold;
+}
+
+.doughnutWrapper {
+  width: 150px;
+  text-align: -webkit-center;
+  /* Updated size */
+}
+
+.noDataMessage {
+  text-align: center;
+  color: black; /* Change text color to black */
+  margin-top: 20px;
+}
+
+.nocontent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 60%;
+  font-size: 5em;
+  align-items: center;
+  justify-content: center;
+}
+
+.nocontent p {
+  font-size: 32px;
+}

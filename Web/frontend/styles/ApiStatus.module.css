@@ -1,0 +1,126 @@
+@font-face {
+    font-family: fontA;
+    src: local("Y 너만을 비춤체"),
+    url(Y너만을비춤체.ttf);
+  }
+
+.dashboard {
+    padding: 20px;
+    background-image: url(/images/home/background.png);  
+}
+  
+  .chartContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .chartItem {
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chartItem h2 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    text-align: center;
+  }
+  
+  .chartItem p {
+    text-align: center;
+    font-size: 1.1em;
+    color: #333;
+  }
+  
+  .userFilesList {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .userFilesListItem {
+    background: #fff;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .heading {
+    color: #333;
+  }
+  
+  .subHeading {
+    color: #333;
+  }
+
+  .chartContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.chartItem {
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chartItem h2 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.chartItem p {
+    text-align: center;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.userFilesList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.userFilesListItem {
+    background: #fff;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+    color: #333;
+}
+
+.subHeading {
+    color: #333;
+}
+
+.cardcontent {
+    text-align: center;
+}
+
+.purchaseButton {
+    margin-top: 10px;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.doughnutWrapper {
+  width: 200px; /* 원하는 크기로 설정 */
+  height: 200px; /* 원하는 크기로 설정 */
+  margin: 0 auto;
+  position: relative;
+}

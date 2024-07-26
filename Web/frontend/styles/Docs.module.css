@@ -1,0 +1,304 @@
+.documentationContainer {
+  font-family: fontA;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 90vw;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #fff;
+}
+
+.headsection {
+  text-align-last: center;
+}
+
+.contentContainer {
+  display: flex;
+  flex: 1;
+}
+
+.section {
+  width: 840px;
+  margin: 100px 0;
+}
+
+.section hr {
+  border-style: solid;
+  opacity: 50%;
+  margin: 30px 0;
+}
+
+.section h2 {
+  font-weight: normal;
+  text-align: start;
+  font-size: 45px;
+}
+
+.section p {
+  opacity: 70%;
+  font-weight: normal;
+}
+
+.sidebar {
+  position: sticky;
+  top: 0px;
+  min-width: 160px;
+  background: #111;
+  padding: 20px;
+  color: white;
+  height: calc(100vh + 130px);
+}
+
+.sidebarList {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebarList li {
+  margin: 20px 10px;
+  cursor: pointer;
+  font-size: 1.1em;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.sidebarList li.active::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  width: 5px;
+  height: 100%;
+  background: orange;
+}
+
+.sidebarList li:hover {
+  color: #ddd;
+}
+
+.sidebarList li.active {
+  color: #ddd;
+}
+
+.center {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content {
+  margin: 0px 200px;
+  flex-grow: 1;
+  color: rgb(0, 0, 0);
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.heading {
+  font-size: 2.5em;
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+
+.cardContainer {
+  display: flex;
+  margin: 100px 0px;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 840px;
+}
+
+.card {
+  display: flex;
+  background: #fff;
+  width: 350px;
+  height: 400px;
+  border-radius: 10px;
+  outline: auto #000;
+  text-align: center;
+  cursor: pointer;
+  min-width: 30%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.card:hover {
+  background: #ccc;
+  transition: all 0.2s;
+}
+
+.cardtext {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.card h2 {
+  margin: 0;
+  font-size: 36px;
+}
+
+.card p {
+  margin: 0px;
+}
+
+.card .cardicon {
+  background-image: url(../public/images/docsstarticon.png);
+  height: 140px;
+  width: 195px;
+  background-size: cover;
+}
+
+.card .cardicon2 {
+  background-image: url(../public/images/keyicon.png);
+  height: 140px;
+  width: 140px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.filesection {
+  background-color: #ccc;
+  padding: 30px 30px 10px 50px;
+  border-radius: 30px;
+}
+
+.filesection h2 {
+  font-size: 30px;
+}
+
+.filesection h3 {
+  font-weight: normal;
+  font-size: 24px;
+  color: #666;
+}
+
+.filesection p {
+  text-align: right;
+  color: #666;
+}
+
+.fileFormats {
+  font-weight: bold;
+  display: flex;
+  margin: 20px 0;
+}
+
+.fileFormat {
+  width: 50px;
+  margin: 0px 20px;
+  outline: solid 1px rgb(0, 0, 0);
+  padding: 5px 30px;
+  border-radius: 20px;
+}
+
+.section ul {
+  opacity: 70%;
+  margin: 30px 10px;
+}
+
+.section h3 {
+  font-weight: normal;
+  font-size: 24px;
+}
+
+.codeEX {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 10px;
+  width: 800px;
+  height: fit-content;
+  background: #011627;
+  border-radius: 15px;
+}
+
+.codetop {
+  margin-top: -20px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.codetop span {
+  background: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+
+.codeEX pre {
+  margin: 0 50px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.contactUs {
+  text-align: center;
+  padding: 20px;
+}
+
+.contactUs button {
+  cursor: pointer;
+  height: 45px;
+  width: 240px;
+  margin-bottom: 23px;
+  border: none;
+  font-family: fontA;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  color: #000;
+  outline: solid 1px #000;
+  border-radius: 40px;
+}
+
+.contactUs button:hover {
+  background-color: #d9d9d9;
+}
+
+.section table {
+  padding: 20px 50px;
+  border-radius: 15px;
+  width: 840px;
+  background-color: #d9d9d9;
+}
+
+.section tr {
+  height: 50px;
+}
+
+.td1 {
+  border: none;
+  color: #666;
+  width: 40%;
+}
+
+@media (max-width: 1024px) {
+  .sidebar {
+    display: none;
+  }
+  
+  .content {
+    margin: 0px 20px;
+  }
+  
+  .cardContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}

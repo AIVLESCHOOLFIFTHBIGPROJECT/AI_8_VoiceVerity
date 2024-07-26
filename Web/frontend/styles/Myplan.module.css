@@ -1,0 +1,234 @@
+.container {
+  font-family: fontA;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 90vw;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+}
+
+.main {
+  background-color: #f0f0f0;
+  border-radius: 30px;
+  text-align: center;
+  margin: 0 200px;
+  justify-content: center;
+  align-self: center;
+  width: 900px;
+  padding: 50px;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+
+.userIcon {
+  width: 80px;
+  height: 80px;
+  background-color: #cdcdcd;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.userIcon img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.text {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+}
+
+.text h1 {
+  font-weight: normal;
+}
+
+.paymentDate {
+  margin-left: 20px;
+}
+
+.plans {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.planCard {
+  background-color: #b8b8b8;
+  border: solid 1px #b8b8b8;
+  border-radius: 10px;
+  width: 220px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  padding: 20px;
+}
+
+.planCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.planCard h2 {
+  font-weight: normal;
+  font-size: 25px;
+  margin: 0;
+}
+
+.noPlan {
+  background-color: #fff;
+  border: solid 1px #000000;
+  border-radius: 10px;
+  width: 300px;
+  padding: 20px;
+  font-size: 15px;
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  margin: 0 10px;
+  color: #000; /* 화살표 색상 */
+}
+
+.planDescription {
+  background-color: #fff;
+  border: solid 1px #000000;
+  border-radius: 10px;
+  padding: 10px;
+  height: 107%;
+  width: 109%;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: -20px;
+}
+
+.planDescription p {
+  margin: 39px 0;
+  font-size: 20px;
+}
+
+.currentPlan {
+  border: 2px solid #000;
+  position: relative;
+}
+
+.currentPlan::after {
+  content: '✓';
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  border: 2px solid black;
+}
+
+.subscribeButton {
+  cursor: pointer;
+  height: 45px;
+  width: 150px;
+  margin: 20px auto;
+  border: none;
+  font-family: fontA;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  color: #000;
+  outline: solid 1px #000;
+  border-radius: 40px;
+  transition: background 0.3s;
+}
+
+.subscribeButton:hover {
+  background-color: #d9d9d9;
+}
+
+.contactUs {
+  text-align: center;
+  margin-top: 70px;
+}
+
+.contactUs button {
+  cursor: pointer;
+  height: 45px;
+  width: 240px;
+  margin-bottom: 23px;
+  border: none;
+  font-family: fontA;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  color: #000;
+  outline: solid 1px #000;
+  border-radius: 40px;
+  transition: background 0.3s;
+}
+
+.contactUs button:hover {
+  background-color: #d9d9d9;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContent {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.modalContent button {
+  cursor: pointer;
+  height: 35px; /* 버튼 높이 조정 */
+  width: 100px; /* 버튼 너비 조정 */
+  margin: 10px; /* 버튼 사이 간격 조정 */
+  border: none;
+  font-family: fontA;
+  font-size: 16px; /* 버튼 폰트 크기 조정 */
+  background-color: #d9d9d9; /* 버튼 배경색 */
+  color: #000;
+  outline: solid 1px #000;
+  border-radius: 20px; /* 버튼 모서리 둥글게 */
+  transition: background 0.3s;
+}
+
+.modalContent button:hover {
+  background-color: #b0b0b0; /* 호버 시 배경색 변경 */
+}
+
+.modalContent .confirmButton {
+  background-color: #d9d9d9; /* 확인 버튼 배경색 */
+}
+
+.modalContent .cancelButton {
+  background-color: #d9d9d9; /* 취소 버튼 배경색 */
+}

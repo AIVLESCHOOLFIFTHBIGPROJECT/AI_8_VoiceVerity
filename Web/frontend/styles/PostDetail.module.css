@@ -1,0 +1,187 @@
+.container {
+  font-family: fontA;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 90vw;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+  color: #333;
+}
+
+.main {
+  margin: 0 200px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.head {
+  width: 840px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid #ccc;
+}
+
+.backButton {
+  background-color: #fff;
+  font-family: fontA;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #333;
+  border: solid 1px #ddd;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  align-self: flex-end;
+}
+
+.backButton:hover {
+  background-color: #f0f0f0;
+  border: solid 1px #ddd;
+  transition: all 0.2s ease;
+}
+
+.main h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.noticeTitle {
+  background-color: rgb(255, 255, 255);
+}
+
+.meta {
+  gap: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 15px;
+  color: #777;
+}
+
+.content {
+  min-height: 300px;
+  width: 800px;
+  background-color: white;
+  border-bottom: solid #ccc;
+  border-top: solid #ccc;
+  padding: 20px;
+}
+
+.content pre {
+  font-family: fontA;
+}
+
+.commentsSection {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 20px;
+}
+
+.commentsSection h2 {
+  margin-bottom: 10px;
+}
+
+.comment {
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.adminComment {
+  background-color: #fff;
+}
+
+.comment .meta {
+  font-size: 12px;
+  color: #999;
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-end;
+  margin: 0;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.actions button {
+  font-family: fontA;
+  background: none;
+  font-size: 16px;
+  color: #333;
+  border: none;
+  cursor: pointer;
+}
+
+.actions button:hover {
+  color: #777;
+  transition: all 0.2s ease;
+}
+
+.commentForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.commentForm textarea {
+  font-family: fontA;
+  color: #333;
+  background-color: #f0f0f0;
+  width: 80%;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+  resize: none;
+  border: none;
+}
+
+.commentForm textarea:focus {
+  outline: none;
+}
+
+.commentline {
+  display: flex;
+  align-items: flex-end;
+  gap: 30px;
+}
+
+.submit {
+  width: 10%;
+  background-color: #fff;
+  font-family: fontA;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #333;
+  border: solid 1px #ddd;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.commentForm label {
+  margin-bottom: 10px;
+}
+
+.commentHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}

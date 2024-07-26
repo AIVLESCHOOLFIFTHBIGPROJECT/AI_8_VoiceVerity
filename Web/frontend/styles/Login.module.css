@@ -1,0 +1,97 @@
+@font-face {
+  font-family: fontA;
+  src: local("Y 너만을 비춤체"),
+  url(Y너만을비춤체.ttf);
+}
+
+.container {
+  font-family: fontA;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 100vw;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #f0f0f0;
+}
+
+.main {
+  position: sticky;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.loginBox {
+  background: white;
+  padding: 40px 60px 40px 60px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+.loginBox p{
+  font-size: 16px;
+  margin: 0;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.inputField {
+  font-family: fontA;
+  width: 80%;
+  padding: 16px;
+  margin: 5px 0px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.loginButton {
+  font-family: fontA;
+  font-size: 16px;
+  width: 88.5%;
+  padding: 16px;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.loginButton:hover {
+  background-color: #444;
+}
+
+.linkContainer {
+  display: flex;
+  justify-content: space-between;
+  color: #555;
+  margin-top: 10px;
+}
+
+.link {
+  color: #555;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}

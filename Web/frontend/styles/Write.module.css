@@ -1,0 +1,150 @@
+.container {
+  font-family: fontA;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 90vw;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+  }
+  
+  .content {
+    margin: 0 200px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    align-self: center;
+    padding: 20px;
+  }
+  
+  .container h1 {
+    font-weight:normal;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+
+  .head {
+    height: 150px;
+    text-align: center;
+    align-content: center;
+    border: solid 1px #ddd;
+    background-color: #f0f0f0;
+  }
+  
+  .form {
+    align-self: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .form input:focus, .form textarea:focus {
+    outline: none;
+  }
+  
+  .form input, .form textarea {
+    width: 800px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .form input {
+    font-family: fontA;
+    font-size: 20px;
+  }
+  
+  .form textarea {
+    font-family: fontA;
+    height: 400px;
+    resize: none;
+  }
+  
+  .form label {
+    width: fit-content;
+    margin-left: auto;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  
+  .form label input[type="checkbox"] {
+    display: none;
+  }
+  
+  .check {
+    margin: 0 10px;
+  }
+
+  .check::before {
+    content:'';
+    position: absolute;
+    display: block;
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    box-sizing:border-box;
+    cursor: pointer;
+  }
+
+  .check:checked + .check::before{
+    content: '✔';
+    position: absolute;
+    text-align: -webkit-center;
+  }
+  
+  .buttonGroup {
+    width: 820px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .button {
+    background-color: #fff;
+    font-family: fontA;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #333;
+    border: solid 1px #ddd;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    align-self: flex-end;
+  }
+  
+  .button:hover {
+    background-color: #f0f0f0;
+    border: solid 1px #ddd;
+    transition: all 0.2s ease;
+  }
+  
+  .cancelButton {
+    background-color: #f0f0f0;
+    font-family: fontA;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #333;
+    border: solid 1px #ddd;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    align-self: flex-end;
+  }
+  
+  .cancelButton:hover {
+    background-color: #ddd;
+    border: solid 1px #ddd;
+    transition: all 0.2s ease;
+  }
+  

@@ -4,5 +4,15 @@ __init__.*
 *.log
 *.pth
 *.pt
+*.env
+*.env.*
+*.wav
+*.png
+*.jpg
+*.gif
+*.mp3
+
+settings.py
+views.py
 
 .DS_Store

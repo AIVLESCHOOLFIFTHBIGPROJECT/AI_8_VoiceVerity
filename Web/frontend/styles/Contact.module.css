@@ -1,0 +1,164 @@
+.container {
+  font-family: fontA;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+}
+
+.content {
+  margin: 0 200px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  align-self: center;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.container h1 {
+  font-weight: normal;
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.head {
+  display: flex;
+  height: 200px;
+  text-align: center;
+  border: solid 1px #ddd;
+  background-color: #f0f0f0;
+  position: relative;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+
+}
+
+.head p {
+  font-size: 20px;
+  color: #666;
+  margin-top: 0;
+}
+
+.searchContainer {
+  min-width: 290px;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: 200px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 30px;
+  border: solid 1px #ccc;
+}
+
+.searchSelect, .searchInput, .searchButton {
+  border: none;
+  background: none;
+  margin-right: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.searchButton {
+  cursor: pointer;
+}
+
+.searchSelect {
+  padding: 5px 10px;
+  border-right: solid 1px #ccc;
+}
+
+.searchInput {
+  width: 100px;
+}
+
+.searchSelect:focus, .searchInput:focus  {
+  outline: none;
+}
+
+.writeButton {
+  background-color: #fff;
+  font-family: fontA;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #333;
+  border: solid 1px #ddd;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  align-self: flex-end;
+}
+
+.writeButton:hover {
+  background-color: #f0f0f0;
+  border: solid 1px #ddd;
+  transition: all 0.2s ease;
+}
+
+.table {
+  width: 100%;
+  max-width: 800px;
+  border-collapse: collapse;
+}
+
+.table th {
+  font-weight: normal;
+  padding: 8px;
+  text-align: center;
+  border-bottom: solid 1px #ddd;
+}
+
+.table th {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.table tbody {
+  cursor: pointer;
+}
+
+.table tbody tr {
+  height: 50px;
+  border-bottom: solid 1px #ddd;
+}
+
+.table td {
+  font-weight: normal;
+  text-align: center;
+  color: #666;
+}
+
+.table tr:hover {
+  background-color: #f0f0f0;
+  transition: all 0.2s ease;
+}
+
+.table td:hover {
+  margin: 0;
+}
+
+.notice {
+  background-color: #ddd;
+}
+
+.pagination button {
+  font-family: fontA;
+  border: none;
+  background: none;
+  margin: 10px;
+  color: #999;
+}
+
+.pagination button.active {
+  outline: none;
+  color: #000;
+}
