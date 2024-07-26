@@ -79,9 +79,11 @@ In the classification model training stage, we develop and train a model that ca
 
 ### Vision Transformer (ViT) Model Description
 
-The ViT model uses a different approach than traditional convolutional neural networks (CNNs) for image classification. It processes images using a transformer architecture, extending transformers, which are mainly used in natural language processing (NLP), to the image domain. ViT is innovative in various aspects, especially performing well on large-scale datasets.
+The ViT model uses a different approach than traditional convolutional neural networks (CNNs) for image classification. It processes images using a transformer architecture, extending transformers, which are mainly used in natural language processing (NLP), to the image domain. ViT is innovative in various aspects, especially performing well on large-scale datasets.(https://arxiv.org/pdf/2010.11929)
 
 #### Key Components of the ViT Model
+
+![vit](./img/vit.png)
 
 1. **Patch Embedding**: Splits the input image (here, mel-spectrogram image) into fixed-size patches. For example, a 256x256 image is split into 16x16 patches, resulting in a total of 256 patches. Each patch is converted into a 1-dimensional vector.
 2. **Position Embedding**: Encodes the position information of each patch since patches are arranged in sequence. Position embedding is added to provide the position information of patches to the model.
